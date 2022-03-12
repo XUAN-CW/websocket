@@ -29,11 +29,10 @@ public class WsController {
      * @param message
      */
 //    @MessageMapping(value = "/points")
-    // http://localhost:8080/test
+    // http://localhost:8080/test?message=testMsg
     @GetMapping("test")
-    public void point(Map message) {
-        System.out.println("point");
-        //发送消息给指定用户, 最后接受消息的路径会变成 /user/admin/queue/points
-        messageTemplate.convertAndSendToUser("admin11", "", message+"1111");
+    public void point(String message) {
+        //发送消息给指定用户, 最后接受消息的路径会变成 /user/admin123/
+        messageTemplate.convertAndSendToUser("admin123", "", message);
     }
 }

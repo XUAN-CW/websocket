@@ -32,3 +32,30 @@ id: 1647085156829705500
 
 
 
+# 前端实现
+
+## 创建项目
+
+```
+vue create websocket-vue2
+```
+
+## 安装
+
+```
+npm i sockjs-client@1.4.0
+npm i stompjs@2.3.3
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

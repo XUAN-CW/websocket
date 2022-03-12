@@ -34,7 +34,7 @@ public class WebSocketConfig implements  WebSocketMessageBrokerConfigurer {
         // 在网页上我们就可以通过这个链接
         // http://localhost:8080/endpointSang
         // 来和服务器的WebSocket连接
-        registry.addEndpoint("/endpointSang")
+        registry.addEndpoint("/endpoint")
                // .addInterceptors(new HttpSessionHandshakeInterceptor())
                 .setAllowedOrigins("*") // 允许跨域设置
                 .withSockJS();
