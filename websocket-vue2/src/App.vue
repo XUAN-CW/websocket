@@ -51,7 +51,6 @@ export default {
             "/user/admin123/",
             function (data) {
               //订阅消息
-              console.log(data, "******收到消息了********");
               that.msg += data.body;
             },
             headers
